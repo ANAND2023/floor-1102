@@ -1,0 +1,24 @@
+.secont { font-size: 52px; margin-bottom: 50px;}
+.second {
+	font-weight: 200;
+}
+
+.second span {
+	position: relative;
+	display: inline-block;
+	padding: 5px 10px ;
+	border-radius: 10px;
+	border-bottom: 1px solid mediumseagreen;
+}
+
+.second span:after {
+	content: '';
+	position: absolute;
+	bottom: calc(-100% - 1px);
+	margin-left: -10px;
+	display: block;
+	width: 100%;
+     height: 100%;
+	border-radius: 10px;
+	border-top: 1px solid mediumseagreen;
+}

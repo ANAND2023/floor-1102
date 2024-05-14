@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Navbar from './Component/Heading/Navbar'
+import Banner from './Component/Banner/Banner'
+import Product from './Component/Product/Product'
+import Contact from './Component/Contact/Contact'
+import Project from './Component/Project/Project'
+import { Marqueeapp } from './Component/Marquee/Marquee'
+import About from './Component/About/About'
+// import Faq from './Component/Faq/FaqSection'
+import FaqSection from './Component/Faq/Faq'
+import Footer from './Component/Footer/Footer'
+// import MySlider from './Component/Slider/MySlider'
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   <>
+    
+    <Marqueeapp/>
+    <Navbar/>
+<Banner/>
+<Product/>
+<Project/>
+<About/>
+<FaqSection/>
+{/* <MySlider/> */}
+<Contact/>
+<Footer/>
+   </>
+  )
 }
 
-export default App;
+export default App
