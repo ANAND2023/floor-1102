@@ -14,6 +14,7 @@
 .slider .arrows {
     position: absolute;
     top: 50%;
+    bottom: -9px;
     background: none;
     height: 60px;
     border: 0;

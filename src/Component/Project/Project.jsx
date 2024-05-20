@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "../Card/Card.css";
 import './Project.css'
+import Heading from "../Heading/Heading";
 function Project() {
 //   var settings = {
 //     dots: true,
@@ -66,7 +67,8 @@ const settings = {
   };
   return (
     <div className="py-10 overflow-hidden  w-full mx-auto slider-div">
-    
+
+<Heading pb="10" pt="0" title="OUR RECENT PROJECTS" para="" />
         <Slider {...settings} className=" w-full " >
           <div class="  ">
             <div class="card">

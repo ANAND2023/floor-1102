@@ -76,11 +76,19 @@ function Container() {
 export default function App() {
   return(
     <>
-   <div className='w-full py-10 '>
- <div className='w-[80%] mx-auto grid md:grid-cols-2 bg-gray-100 p-10 rounded-2xl'>
+   
+    <div
+
+style={{ backgroundImage: "url('https://images.unsplash.com/photo-1468577374753-87c7686a392b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fGZsb29yJTIwbGlnaHR8ZW58MHx8MHx8fDA%3D')",
+ backgroundAttachment: 'fixed', backgroundRepeat: "no-repeat", backgroundSize: "cover",  padding:"50px 0 50px 0"
+}}
+
+>
+
+ <div className='w-[80%] mx-auto grid md:grid-cols-2 bg-[#5e3b3b45] p-10 rounded-2xl'>
  <div className=' flex justify-center '>
     
-    <img className='w-[400px] rounded-lg' src="https://cdn.dribbble.com/users/171243/screenshots/14848315/media/c5e6682942ba03aca09b6024b4249098.gif" alt="" />
+    <img className='w-[400px] rounded-lg' src="https://static.wixstatic.com/media/fa1267_31a6ccc1764b4c6ea094561147364a95~mv2.gif" alt="" />
 </div>
  <Container />;
  </div>

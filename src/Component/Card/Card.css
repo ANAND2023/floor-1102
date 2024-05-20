@@ -91,6 +91,8 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--clr);
+    color: #333;
+    margin-bottom: 13px;
 }
 
  .card .content p {

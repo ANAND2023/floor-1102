@@ -4,9 +4,9 @@ import Heading from '../Heading/Heading'
 const Product = () => {
   return (
    <>
- <Heading title="Product" />
- <p className='text-center'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, accusamus asperiores id sunt alias ex dolore laboriosam aliquid facilis nulla.</p>
-<div class="max-w-screen-2xl mx-auto px-4 pt-16 lg:py-24 relative bg-gray-50">
+ <Heading pb="10" pt="10" title="Product" para="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, accusamus asperiores id sunt alias ex dolore laboriosam aliquid facilis nulla." />
+
+<div class="max-w-screen-2xl mx-auto px-4 pt-16 lg:py-5 relative bg-gray-50">
     <div class="flex flex-col md:flex-row gap-2">
         <div class="flex flex-1 flex-col gap-2">
             <div class="flex flex-1 flex-col">
@@ -37,7 +37,7 @@ const Product = () => {
     </div>
 </div>
 
-<div class="max-w-screen-2xl mx-auto px-4 pb-16 lg:py-24 relative bg-white">
+<div class="max-w-screen-2xl mx-auto px-4 pb-16  relative bg-white">
     <div class="flex flex-col md:flex-row gap-2">
         <div class="flex flex-1 flex-col">
             <div class="flex flex-1 flex-col">

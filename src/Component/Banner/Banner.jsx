@@ -67,7 +67,7 @@ const Banner = () => {
             className='each-slide relative' 
             key={ index } 
             style={{ backgroundImage: item.eachSlide }}>
-                <div className="absolute bottom-10 md:top-[300px] md:left-[200px] w-[400px] bg-[#9ca3af30] p-4">
+                <div className="absolute bottom-10 md:top-[300px] md:left-[200px] w-[400px] bg-[#ac90665e] p-4">
                 <h1 className="text-xl text-white ">{item.para}</h1>
                 
                 </div>
@@ -122,7 +122,7 @@ const Banner = () => {
     )
 
     return (
-        <section className='slider'>
+        <section className='slider z-[99]'>
             <div 
                 className='wrapper' 
                 style={ setSliderStyles() }>

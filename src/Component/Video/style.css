@@ -1,0 +1,32 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+   */
+  /* .video {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  } */
+  
+  .video-docker video {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .video-docker::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* background: rgba(0, 0, 0, 0.6); */
+    z-index: 1;
+  }
+  
+  .video-content {
+    z-index: 2;
+  }
