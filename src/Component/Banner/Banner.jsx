@@ -67,8 +67,8 @@ const Banner = () => {
             className='each-slide relative' 
             key={ index } 
             style={{ backgroundImage: item.eachSlide }}>
-                <div className="absolute bottom-10 md:top-[300px] md:left-[200px] w-[400px] bg-[#ac90665e] p-4">
-                <h1 className="text-xl text-white ">{item.para}</h1>
+                <div className="absolute font bottom-10 md:top-[300px] md:left-[200px] w-[400px] bg-[#ac90665e] p-4">
+                <p className="text-xl text-white ">{item.para}</p>
                 
                 </div>
         </div> 

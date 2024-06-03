@@ -20,6 +20,7 @@ import LocomotiveScroll from 'locomotive-scroll';
 import Video from './Component/Video/Video'
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
 import Landing from './Component/Landing'
+import ProductPage from './Component/Pages/Product/ProductPage'
 
 const App = () => {
   const scroll = new LocomotiveScroll();
@@ -35,6 +36,10 @@ const App = () => {
     <Route path='/' element={<Landing/>}/>
     <Route path='/about' element={<About2/>}/>
     <Route path='/contact' element={<Contact/>}/>
+    {/* <Route path='/products/:id' element={<Product />} /> */}
+    <Route path='/products/:id' element={<ProductPage />} />
+    <Route path='/products' element={<ProductPage />} />
+    {/* <Route path='/Product' element={<ProductPage/>}/> */}
   </Routes>
   <Footer/>
   </BrowserRouter>

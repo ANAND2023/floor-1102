@@ -57,7 +57,10 @@ const About = () => {
      </div>
       <div class="w-full  px-4 mr-auto ml-auto">
         <div class="relative flex flex-col min-w-0 break-words w-full mb-2 shadow-lg rounded-lg bg-pink-500">
-          <img alt="..." className='w-full h-[400px]' src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zmxvb3J8ZW58MHx8MHx8fDA%3D" class="w-full align-middle rounded-t-lg"/>
+          <img alt="..." 
+        
+           src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zmxvb3J8ZW58MHx8MHx8fDA%3D" 
+            class="w-full h-[400px]"/>
           {/* <blockquote class="relative p-8 mb-4">
           <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block h-95-px -top-94-px">
                     <polygon points="-30,95 583,95 583,65" class="text-pink-500 fill-current"></polygon>
@@ -79,8 +82,10 @@ const About = () => {
     {/* <div class="flex flex-wrap items-center mt-16"> */}
      
       <div class="w-full  px-4 mr-auto ml-auto">
-        <div class="relative flex flex-col min-w-0 break-words w-full mb-2 shadow-lg rounded-lg bg-pink-500">
-          <img alt="..." className='w-full h-[400px]' src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zmxvb3J8ZW58MHx8MHx8fDA%3D" class="w-full align-middle rounded-t-lg"/>
+        <div class="relative flex flex-col min-w-0 break-words w-full mb-2 shadow-lg rounded-lg ">
+          <img alt="..." 
+           src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zmxvb3J8ZW58MHx8MHx8fDA%3D"
+            class="w-full h-[400px] align-middle rounded-t-lg"/>
           {/* <blockquote class="relative p-8 mb-4">
           <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block h-95-px -top-94-px">
                     <polygon points="-30,95 583,95 583,65" class="text-pink-500 fill-current"></polygon>

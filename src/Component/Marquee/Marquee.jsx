@@ -4,8 +4,10 @@ export const Marqueeapp = () => {
   return (
     <div>
       <Marquee hoverToStop={ true } >
-        <span className='py-2 text-white mx-5'>This is my text</span>
+       <div className='bg-[#04020270]'>
+       <span className='py-2 text-white mx-5'>This is my text</span>
          <span className='py-2 text-white mx-5'>hello</span>
+       </div>
       </Marquee>
     </div>
   );

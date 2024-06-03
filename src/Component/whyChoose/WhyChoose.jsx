@@ -10,16 +10,16 @@ const WhyChoose = () => {
               <div>
                 
                 <div class="lg:pr-8 lg:pt-4">
-                  <div class="lg:max-w-lg">
+                  <div class="lg:max-w-lg font">
                     <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                       WHY CHOOSE US
                     </p>
-                    <p class="mt-6 text-lg leading-8 text-gray-600">
+                    <p class="mt-6  text-lg leading-8 text-gray-600">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Sit, tempore.
                     </p>
                     <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
-                      <div class="relative pl-9">
+                      <div class="relative pl-9 ">
                         <dt class="inline font-semibold text-gray-900">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ const WhyChoose = () => {
                           </svg>
                           Lorem, ipsum.
                         </dt>
-                        <dd class="inline">
+                        <dd class="inline ">
                           Lorem ipsum dolor sit, amet consectetur adipisicing
                           elit. Labore, ex?
                         </dd>

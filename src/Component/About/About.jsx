@@ -20,7 +20,7 @@ const About = () => {
                     <span class="desaturate">We´re </span>
                     coming soon
                 </h1>
-                <p class="paragraph">Hello fellow shoppers! We´re currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+                <p class="paragraph font">Hello fellow shoppers! We´re currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
                
             </main>
            </div>
