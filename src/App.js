@@ -21,6 +21,8 @@ import Video from './Component/Video/Video'
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
 import Landing from './Component/Landing'
 import ProductPage from './Component/Pages/Product/ProductPage'
+import BlogPage from './Component/Pages/BlogsPage/BlogPage'
+import BlogDetails from './Component/Pages/BlogsPage/BlogDetails'
 
 const App = () => {
   const scroll = new LocomotiveScroll();
@@ -39,6 +41,8 @@ const App = () => {
     {/* <Route path='/products/:id' element={<Product />} /> */}
     <Route path='/products/:id' element={<ProductPage />} />
     <Route path='/products' element={<ProductPage />} />
+    <Route exact path="/blogs" element={<BlogPage/>} />
+        <Route path="/blogs/:id" element={<BlogDetails/>} />
     {/* <Route path='/Product' element={<ProductPage/>}/> */}
   </Routes>
   <Footer/>

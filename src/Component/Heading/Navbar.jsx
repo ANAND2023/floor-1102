@@ -35,7 +35,7 @@ const Navbar = () => {
                     <li className='list-none'><Link to="about">About</Link></li>
                     <li className='list-none'><Link to="contact">Contact</Link></li>
                     <li className='list-none'><Link to="products">Products</Link></li>
-                    <li className='list-none'><Link to="Project">Contact</Link></li>
+                    <li className='list-none'><Link to="blogs">Blogs</Link></li>
 
                     <label htmlFor="check" className="close-menu">X</label>
                 </span>
