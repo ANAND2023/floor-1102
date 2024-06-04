@@ -21,8 +21,10 @@ import Video from './Component/Video/Video'
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
 import Landing from './Component/Landing'
 import ProductPage from './Component/Pages/Product/ProductPage'
-import BlogPage from './Component/Pages/BlogsPage/BlogPage'
-import BlogDetails from './Component/Pages/BlogsPage/BlogDetails'
+import { BlogPage } from './Component/Pages/BlogsPage/BlogPage'
+import { BlogDetails } from './Component/Pages/BlogsPage/BlogDetails'
+// import BlogPage from './Component/Pages/BlogsPage/BlogPage'
+// import BlogDetails from './Component/Pages/BlogsPage/BlogDetails'
 
 const App = () => {
   const scroll = new LocomotiveScroll();
