@@ -3,6 +3,7 @@ import img from '../Assets/images/b5.jpg'
 // banner image
 import football from '../Assets/banner/football-turf.png'
 import b1 from '../Assets/banner/b1.jpg'
+import b2 from '../Assets/banner/wooden-flooring.png'
 
 export const nav = [
 
@@ -183,7 +184,7 @@ export const slides = [
   },
   {
   //   eachSlide: 'url(https://images.unsplash.com/photo-1630699376289-b62375a35505?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGZsb29yaW5nfGVufDB8fDB8fHww)',
-    eachSlide: `url(${b1})`,
+    eachSlide: `url(${b2})`,
     para:"loremLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, "
 
   },

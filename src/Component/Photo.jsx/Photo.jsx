@@ -34,8 +34,10 @@ const Photo = () => {
 	return (
    <>
    
-   <Heading pb="20" pt="10" title="Product" para="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, accusamus asperiores id sunt alias ex dolore laboriosam aliquid facilis nulla." />
+<div className="">
+<Heading pb="20" pt="10" title="Product" para=" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, accusamus asperiores id sunt alias ex dolore laboriosam aliquid facilis nulla. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, accusamus asperiores id sunt alias ex dolore laboriosam aliquid facilis nulla. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, accusamus asperiores id sunt alias ex dolore laboriosam aliquid facilis nulla. " />
 
+</div>
 <main id="container" className="my-20">
   {/* ---------- section 01 ---------- */}
   <section className="horizontal-section">

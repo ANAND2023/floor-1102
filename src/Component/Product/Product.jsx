@@ -4,8 +4,8 @@ import Heading from '../Heading/Heading'
 const Product = () => {
   return (
    <>
- <Heading pb="10" pt="10" title="Product" para="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, accusamus asperiores id sunt alias ex dolore laboriosam aliquid facilis nulla." />
-
+ <Heading pb="10" pt="20" title="Product" para="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, accusamus asperiores id sunt alias ex dolore laboriosam aliquid facilis nulla." />
+<h1 className='py-32'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nisi, et hic velit aspernatur impedit deleniti adipisci corporis maxime magnam reprehenderit id, consectetur inventore sint dolor? Consequuntur eum nemo nam veritatis adipisci non labore laudantium, soluta illo magni maiores explicabo odio beatae dolores maxime ducimus ex quidem, sequi ut distinctio sunt quas voluptates officia ab? Fuga distinctio veritatis laboriosam, tempora quasi eligendi autem sapiente aperiam tenetur aspernatur eos labore totam accusamus temporibus culpa atque, natus facere cum ducimus error nobis quo aliquam sunt. Cupiditate in ad accusamus tenetur, quis soluta, fuga corporis ipsam autem eius possimus laborum sapiente explicabo placeat, repudiandae et rerum dolor ea dignissimos iste ducimus id sed! Ab dolores possimus reiciendis vitae libero culpa nulla, animi voluptatem sapiente tempore officiis necessitatibus aspernatur pariatur iste in sed cum minima perferendis neque nihil itaque temporibus. Cum aliquam perferendis consequatur doloremque exercitationem facilis provident ad, vero magni neque non dolor itaque quas aut recusandae, cupiditate cumque libero quod error incidunt necessitatibus rerum quos unde excepturi. Amet quod tenetur, molestias iusto impedit quo. Veniam nobis corporis enim recusandae in quod hic nostrum, debitis odit optio ipsa. Ipsam quas tempora quisquam ex dignissimos eos quasi obcaecati, expedita maiores aliquid deleniti sapiente? Natus.</h1>
 <div class="max-w-screen-2xl mx-auto px-4 pt-16 lg:py-5 relative bg-gray-50">
     <div class="flex flex-col md:flex-row gap-2">
         <div class="flex flex-1 flex-col gap-2">
