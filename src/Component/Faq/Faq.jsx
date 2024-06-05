@@ -56,7 +56,7 @@ function Container() {
     <div>
     
       <div className=''>
-        <div className=''>
+        <div className='text-white'>
           {questionsList.map((item, i) =>
             <Collapsible key={i} title={item.title} text={item.text}/>
           )}
@@ -85,7 +85,7 @@ style={{ backgroundImage: "url('https://images.unsplash.com/photo-1468577374753-
 
 >
 
- <div className='w-[80%] mx-auto grid md:grid-cols-2 bg-[#5e3b3b45] p-10 rounded-2xl'>
+ <div className='w-[80%] mx-auto grid md:grid-cols-2 bg-[#0000006e] p-10 rounded-2xl'>
  <div className=' flex justify-center '>
     
     <img className='w-[400px] rounded-lg' src="https://static.wixstatic.com/media/fa1267_31a6ccc1764b4c6ea094561147364a95~mv2.gif" alt="" />

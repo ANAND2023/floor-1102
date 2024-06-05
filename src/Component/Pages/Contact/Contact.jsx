@@ -3,17 +3,66 @@ import './Style.css'
 import { FaHome } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { motion } from 'framer-motion';
+import Form from '../../Contact/Form';
+
 const Contact = () => {
+  
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.5,
+    }
+  }
+};
+const childrenVariants = {
+  hidden: {
+    scale: 0,
+    opacity: 0,
+    y: 100,
+  },
+  visible: {
+    scale: 1,
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+      mass: 1.5,
+      stiffness: 200,
+    }
+  }
+};
+
+const picsContainerVariants = {
+  hidden: {
+    opacity: 0,
+    y: 100,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "tween",
+      duration: 1,
+      delay: 0.5,
+    }
+  }
+};
+
   return (
     <>    <section className='contact_us'>
     
    <div className=''> 
-   <div class="section-header">
-      <div class="Contact_container">
+   <motion.div class="section-header" 
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible">
+      <motion.div class="Contact_container" variants={childrenVariants}>
         <h2>Contact Us</h2>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
     
     <div class="Contact_container">
       <div class="row">
@@ -53,7 +102,7 @@ const Contact = () => {
           </div>
         </div>
         
-        <div class="contact-form">
+        {/* <div class="contact-form">
           <form action="" id="contact-form">
             <h2>Send Message</h2>
             <div class="input-box">
@@ -75,8 +124,16 @@ const Contact = () => {
               <input type="submit" value="Send" name=""/>
             </div>
           </form>
-        </div>
+        </div> */}
+        <motion.div
         
+          variants={picsContainerVariants}
+          initial="hidden"
+          animate="visible">
+              <Form/>
+          </motion.div>
+
+      
       </div>
     </div>
    </div>
