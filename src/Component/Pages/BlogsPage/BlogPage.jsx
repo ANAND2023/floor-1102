@@ -1,9 +1,7 @@
 import React from "react";
 import "./blog.css";
 import { blog } from "../../../Component/data";
-
 import { Link } from "react-router-dom";
-
 export const BlogPage = () => {
   console.log("bolg", blog.cover);
   return (
@@ -12,14 +10,14 @@ export const BlogPage = () => {
         <div class="md:grid md:gap-6 md:grid-cols-2 lg:grid-cols-3 mb-12">
           {blog.map((item) => (
             <Link to={`/blogs/${item.id}`} className="link">
-              <article class="p-6 mb-6 border border-gray-100  group transform hover:-translate-y-2   cursor-pointer hover:border-yellow-600 rounded-lg hover:shadow-xl transition duration-300 ease-in-out ">
+              <article class="p-6 mb-6 border border-gray-300  group transform hover:-translate-y-2   cursor-pointer hover:border-yellow-600 rounded-lg hover:shadow-xl transition duration-300 ease-in-out ">
                 <a
                   href="#1"
                   class="absolute opacity-0 top-0 right-0 left-0 bottom-0"
                 ></a>
                 <div class="relative mb-4 rounded-xl">
                   <img
-                    class="max-h-80 rounded-xl w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
+                    class="max-h-52 rounded-xl w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
                     src={item.cover}
                     alt=""
                   />

@@ -1,6 +1,6 @@
 
   .font h1 {
-    font-family: "Raleway", sans-serif;
+    /* font-family: "Raleway", sans-serif; */
     font-weight: 300;
     text-align: center;
     font-size: 40px;
@@ -15,7 +15,7 @@
     font-size:20px;
     font-weight: normal;
     font-style: italic;
-     font-family: "Playfair Display","Bookman",serif;
+     /* font-family: "Playfair Display","Bookman",serif; */
     /* color:#f4ecec;  */
     letter-spacing:-0.005em; word-spacing:1px;
     letter-spacing:none;
