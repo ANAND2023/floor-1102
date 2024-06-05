@@ -1,11 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Blogs.css'
 import Heading from '../Heading/Heading'
+import { BlogPage } from '../Pages/BlogsPage/BlogPage'
+import { Blog } from '../Pages/BlogsPage/Blog'
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 const Blogs = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // duration of the animation
+    });
+  }, []);
   return (
     <>
-    <Heading pb="0" pt="10" title="Blogs" para="Lorem ipsum, dolor sit amet consectetur dolore laboriosam aliquid facilis nulla." />
-<div className='w-[90%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-5 '>
+    <div className="pb-10" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
+<Heading pb="20" pt="10" title="Blogs" para=" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, accusamus asperiores id sunt alias ex dolore laboriosam aliquid facilis nulla. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, accusamus asperiores id sunt alias ex dolore laboriosam aliquid facilis nulla. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, accusamus asperiores id sunt alias ex dolore laboriosam aliquid facilis nulla. " />
+
+</div>
+    {/* <Heading pb="0" pt="10" title="Blogs" para="Lorem ipsum, dolor sit amet consectetur dolore laboriosam aliquid facilis nulla." /> */}
+    <Blog limit={3}/>
+{/* <div className='w-[90%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-5 '>
 <figure class="snip1527">
   <div class="image"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bGl2aW5nJTIwcm9vbXxlbnwwfHwwfHx8MA%3D%3D" alt="pr-sample23" /></div>
   <figcaption>
@@ -43,7 +57,7 @@ const Blogs = () => {
   </figcaption>
   <a href="#"></a>
 </figure>
-</div>
+</div> */}
     </>
   )
 }

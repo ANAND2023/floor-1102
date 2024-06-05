@@ -3,18 +3,13 @@ import { ScrollTrigger } from "gsap/all";
 import React from "react";
 import './Photo.css'
 import Heading from "../Heading/Heading";
-
-// ---------- scrollTrigger plugin registration
 gsap.registerPlugin(ScrollTrigger);
 
 const Photo = () => {
-	// ---------- gsap context
+	
 	React.useLayoutEffect(() => {
 		const ctx = gsap.context(() => {
-			// ---------- selecting all horizontal sections
 			const horizontalSections = gsap.utils.toArray(".horizontal-section");
-
-			// ---------- applying horizontal scroll animation
 			gsap.to(horizontalSections, {
 				xPercent: -100 * (horizontalSections.length - 1),
 				ease: "none",
@@ -34,7 +29,7 @@ const Photo = () => {
 	return (
    <>
    
-<div className="">
+<div className="" data-aos="fade-up" data-aos-duration="2000">
 <Heading pb="20" pt="10" title="Product" para=" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, accusamus asperiores id sunt alias ex dolore laboriosam aliquid facilis nulla. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, accusamus asperiores id sunt alias ex dolore laboriosam aliquid facilis nulla. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, accusamus asperiores id sunt alias ex dolore laboriosam aliquid facilis nulla. " />
 
 </div>

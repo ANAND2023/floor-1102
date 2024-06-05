@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { useParams } from "react-router-dom"
 import { useEffect } from "react"
 import { blog } from "../../../Component/data"
+import { BlogPage } from "./BlogPage"
 
 export const BlogDetails = () => {
   const { id } = useParams()
@@ -35,6 +36,11 @@ export const BlogDetails = () => {
         </div>
 
       ) : null}
+      {/* <div className="">
+        <div className="md:w-[90%] mx-auto">
+          <h1 className="text-2xl font-bold my-5">Latest Blogs</h1></div>
+      <BlogPage limit={3}/>
+      </div> */}
     </>
   )
 }

@@ -1,69 +1,151 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { RiArrowRightDoubleFill } from "react-icons/ri";
+import { motion } from "framer-motion"
 const ProductPage = () => {
   const { id } = useParams();
   const contentId = id || 'Item1';
-{
-    console.log("contentId",)
-}
+  const containerVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.5,
+      }
+    }
+  };
+  const childrenVariants = {
+    hidden: {
+      scale: 0,
+      opacity: 0,
+      y: 100,
+    },
+    visible: {
+      scale: 1,
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        mass: 1.5,
+        stiffness: 200,
+      }
+    }
+  };
+  const picsContainerVariants = {
+    hidden: {
+      opacity: 0,
+      y: 100,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "tween",
+        duration: 1,
+        delay: 0.5,
+      }
+    }
+  };
   return (
     <>
       {contentId === 'Item1' && (
-        <section className="w-full">
-          <img
+        <motion.section
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        
+        className="w-full">
+          <motion.img
+           variants={childrenVariants}
             src="https://images.unsplash.com/photo-1459478309853-2c33a60058e7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
             className="object-cover w-full h-[300px]"
             alt="colorful leafs"
           />
-          <div className='w-[80%] mx-auto py-10'>
+          <motion.div 
+           variants={picsContainerVariants}
+           initial="hidden"
+           animate="visible"
+          className='w-[80%] mx-auto py-10'>
 <h1 className='text-center text-2xl pb-5'>Lorem ipsum dolor sit amet11111.</h1>
           <p className='text-gray-600'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat totam vero esse voluptates quae accusamus repellendus. Eligendi ea voluptas vitae.</p>
 
-          </div>
-        </section>
+          </motion.div>
+        </motion.section>
       )}
       {contentId === 'Item2' && (
-        <section className="w-full">
-          <img
+        <motion.section
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        
+        className="w-full">
+          <motion.img
+           variants={childrenVariants}
             src="https://plus.unsplash.com/premium_photo-1705479742873-f826fe23a01c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zmxvb3J8ZW58MHx8MHx8fDA%3D"
             className="object-cover w-full h-[300px]"
             alt="colorful leafs"
           />
-          <div className='w-[80%] mx-auto py-10'>
-<h1 className='text-center text-2xl pb-5'>Lorem ipsum dolor sit amet2......</h1>
+          <motion.div 
+           variants={picsContainerVariants}
+           initial="hidden"
+           animate="visible"
+          className='w-[80%] mx-auto py-10'>
+<h1 className='text-center text-2xl pb-5'>Lorem ipsum dolor sit amet11111.</h1>
           <p className='text-gray-600'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat totam vero esse voluptates quae accusamus repellendus. Eligendi ea voluptas vitae.</p>
 
-          </div>
-        </section>
+          </motion.div>
+        </motion.section>
       )}
       {contentId === 'Item3' && (
-        <section className="w-full ">
-          <img
+         <motion.section
+         variants={containerVariants}
+         initial="hidden"
+         animate="visible"
+         
+         className="w-full">
+           <motion.img
+            variants={childrenVariants}
             src="https://images.unsplash.com/photo-1515895309288-a3815ab7cf81?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZsb29yfGVufDB8fDB8fHww"
-            className="object-cover w-full h-[300px]"
-            alt="colorful leafs"
-          />
-          <div className='w-[80%] mx-auto py-10'>
-<h1 className='text-center text-2xl pb-5'>Lorem ipsum dolor sit amet3333.</h1>
-          <p className='text-gray-600'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat totam vero esse voluptates quae accusamus repellendus. Eligendi ea voluptas vitae.</p>
 
-          </div>
-        </section>
+             className="object-cover w-full h-[300px]"
+             alt="colorful leafs"
+           />
+           <motion.div 
+            variants={picsContainerVariants}
+            initial="hidden"
+            animate="visible"
+           className='w-[80%] mx-auto py-10'>
+ <h1 className='text-center text-2xl pb-5'>Lorem ipsum dolor sit amet11111.</h1>
+           <p className='text-gray-600'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat totam vero esse voluptates quae accusamus repellendus. Eligendi ea voluptas vitae.</p>
+ 
+           </motion.div>
+         </motion.section>
+//        
       )}
       {contentId === 'Item4' && (
-        <section className="w-full ">
-          <img
+         <motion.section
+         variants={containerVariants}
+         initial="hidden"
+         animate="visible"
+         
+         className="w-full">
+           <motion.img
+            variants={childrenVariants}
             src="https://images.unsplash.com/photo-1508920052992-6f5a921eba78?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGZsb29yfGVufDB8fDB8fHww"
-            className="object-cover w-full h-[300px]"
-            alt="colorful leafs"
-          />
-          <div className='w-[80%] mx-auto py-10'>
-<h1 className='text-center text-2xl pb-5'>Lorem ipsum dolor sit amet444444.</h1>
-          <p className='text-gray-600'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat totam vero esse voluptates quae accusamus repellendus. Eligendi ea voluptas vitae.</p>
 
-          </div>
-        </section>
+             className="object-cover w-full h-[300px]"
+             alt="colorful leafs"
+           />
+           <motion.div 
+            variants={picsContainerVariants}
+            initial="hidden"
+            animate="visible"
+           className='w-[80%] mx-auto py-10'>
+ <h1 className='text-center text-2xl pb-5'>Lorem ipsum dolor sit amet11111.</h1>
+           <p className='text-gray-600'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat totam vero esse voluptates quae accusamus repellendus. Eligendi ea voluptas vitae.</p>
+ 
+           </motion.div>
+         </motion.section>
+
       )}
 
       <div className="p-5  ">

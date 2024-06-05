@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import './Banner.css'
 import { slides } from "../data"; 
+import { motion } from "framer-motion"
+
 
 const Banner = () => {
     const [active, setActive] = useState(0);
@@ -13,6 +15,31 @@ const Banner = () => {
         const interval = setInterval( () => intervalBetweenSlides(), 3000);
         return () => clearInterval(interval);
     });
+    const containerVariants = {
+        hidden: {},
+        visible: {
+          transition: {
+            staggerChildren: 0.5,
+          }
+        }
+      };
+      const childrenVariants = {
+        hidden: {
+          scale: 0,
+          opacity: 0,
+          y: 100,
+        },
+        visible: {
+          scale: 1,
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 1,
+            mass: 1.5,
+            stiffness: 200,
+          }
+        }
+      };
 
     const toggleAutoPlay = () => setAutoplay(!autoplay)
 
@@ -37,10 +64,21 @@ const Banner = () => {
             key={ index } 
           
              style={{ backgroundImage: item.eachSlide }}> 
-                <div className="absolute font-roboto bottom-10 md:top-[300px] md:left-[200px] w-[400px] bg-[#0000006e] p-4">
-                <p className="text-xl text-gray-200 ">{item.para}</p>
+               <motion.div
+       
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
                 
-                </div>
+                className="absolute font-roboto bottom-10 md:top-[300px] md:left-[200px] w-[400px] bg-[#0000006e] p-4">
+                {/* <p className="text-xl text-gray-200 ">{item.para}</p> */}
+                {/* <motion.h1 className="page-title" variants={childrenVariants}>
+            Shakespeare's Sonnet II
+          </motion.h1> */}
+          <motion.p className="text-xl text-gray-200" variants={childrenVariants}>
+          {item.para}
+          </motion.p>
+                </motion.div>
         </div> 
     ));
 

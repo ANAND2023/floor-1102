@@ -1,6 +1,12 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 const WhyChoose = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // duration of the animation
+    });
+  }, []);
   return (
     <>
       <section class="overflow-hidden bg-white py-8 sm:py-16">
@@ -19,7 +25,7 @@ const WhyChoose = () => {
                       Sit, tempore.
                     </p>
                     <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
-                      <div class="relative pl-9 ">
+                      <div class="relative pl-9 " data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
                         <dt class="inline font-semibold text-gray-900">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +45,7 @@ const WhyChoose = () => {
                           elit. Labore, ex?
                         </dd>
                       </div>
-                      <div class="relative pl-9">
+                      <div class="relative pl-9 " data-aos="fade-up" data-aos-duration="700" data-aos-delay="800">
                         <dt class="inline font-semibold text-gray-900">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +67,7 @@ const WhyChoose = () => {
                           elit. Vero, natus.
                         </dd>
                       </div>
-                      <div class="relative pl-9">
+                      <div class="relative pl-9"  data-aos="fade-up" data-aos-duration="900" data-aos-delay="1000">
                         <dt class="inline font-semibold text-gray-900">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -91,8 +97,11 @@ const WhyChoose = () => {
               </div>
             </div>
             <div class="mt-12 sm:mt-16 lg:mt-0">
-              <div class="-ml-48 pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
+              <div class="-ml-48 pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0"
+             
+              >
                 <img
+                 data-aos="fade-right" data-aos-duration="2000" data-aos-delay="500"
                   alt="Inbox user interface"
                   loading="lazy"
                   width="647"

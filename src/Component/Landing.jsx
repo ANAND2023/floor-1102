@@ -8,15 +8,19 @@ import Project from './Project/Project'
 import Video from './Video/Video'
 import Contact from './Contact/Contact'
 import FaqSection from './Faq/Faq'
+import { Framer } from './Framer'
+
 const Landing = () => {
   return (
    <>
          
 <Banner/>
+{/* <Framer/> */}
 <Photo/>
 {/* <Product/> */}
 <About/>
 <Blogs/>
+
 <WhyChoose/>
 <Project/>
 {/* <CoolVideoComponent/> */}
