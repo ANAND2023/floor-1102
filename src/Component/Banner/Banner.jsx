@@ -1,44 +1,6 @@
 import React, { useEffect, useState } from "react";
 import './Banner.css'
-import b1 from '../../Assets/banner/football-turf.png'
-const slides = [
-    {
-    //   eachSlide: 'url(https://images.unsplash.com/photo-1613621792067-8e28d16b735c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zmxvb3Jpbmd8ZW58MHx8MHx8fDA%3D)',
-    eachSlide: `url(${b1})`,
-      para:"loremLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, "
-
-    },
-    {
-    //   eachSlide: 'url(https://images.unsplash.com/photo-1630699376289-b62375a35505?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGZsb29yaW5nfGVufDB8fDB8fHww)',
-      eachSlide: b1,
-      para:"loremLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, "
-
-    },
-    {
-    //   eachSlide: 'url(https://images.unsplash.com/photo-1600494448868-9fbd1ac2d9f5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGZsb29yaW5nfGVufDB8fDB8fHww)',
-    eachSlide: b1,
-    para:"loremLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, "
-
-    },
-    {
-    //   eachSlide: 'url(https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTV8OTkyMDEwMnx8ZW58MHx8fHx8)',
-      eachSlide: b1,
-      para:"loremLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, "
-
-    },
-    {
-    //   eachSlide: 'url(https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTV8OTkyMDEwMnx8ZW58MHx8fHx8)',
-      eachSlide: b1,
-      para:"loremLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, "
-
-    },
-    {
-    //   eachSlide: 'url(https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b2ZmaWNlJTIwZmxvb3J8ZW58MHx8MHx8fDA%3D)',
-      eachSlide: b1,
-      para:"loremLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, "
-
-    }
-];
+import { slides } from "../data"; 
 
 const Banner = () => {
     const [active, setActive] = useState(0);
@@ -75,8 +37,8 @@ const Banner = () => {
             key={ index } 
           
              style={{ backgroundImage: item.eachSlide }}> 
-                <div className="absolute font bottom-10 md:top-[300px] md:left-[200px] w-[400px] bg-[#ac90665e] p-4">
-                <p className="text-xl text-white ">{item.para}</p>
+                <div className="absolute font-roboto bottom-10 md:top-[300px] md:left-[200px] w-[400px] bg-[#0000006e] p-4">
+                <p className="text-xl text-gray-200 ">{item.para}</p>
                 
                 </div>
         </div> 
