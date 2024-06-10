@@ -24,8 +24,8 @@ const Navbar = () => {
     }, [prevScrollPos]);
 
     return (
-        <header className={`fixed w-full z-20 ${prevScrollPos? "":""} left-0 border-gray-200 dark:border-gray-600 transition-transform duration-300 z-[99999] ${visible ? 'translate-y-6 duration-700' : '-translate-y-full'}`}>
-            <nav className="max-w-[90vw] bg-[#26201759] text-white px-2 rounded-sm flex flex-wrap justify-between items-center relative mx-auto py-2">
+        <header className={`fixed w-full  z-[999999] ${prevScrollPos? "":""} left-0 border-gray-200 dark:border-gray-600 transition-transform duration-300 z-[99999] ${visible ? 'translate-y-6 duration-700' : '-translate-y-full'}`}>
+            <nav className="z-[999999] max-w-[90vw] bg-[#26201759] text-white px-2 rounded-sm flex flex-wrap justify-between items-center relative mx-auto py-2">
                 <Link className="logo" to="/">
                     <h3 className="font-bold text-2xl">LOGO</h3>
                 </Link>

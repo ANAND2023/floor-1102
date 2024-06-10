@@ -1,21 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { MdArrowRight } from "react-icons/md";
-import './Faq.css'
+import "./Faq.css";
 function Collapsible({ title, text }) {
   const [open, setOpen] = useState(false);
-  
 
   const togglePanel = () => {
     setOpen(!open);
   };
- 
+
   return (
-    <div className='item'>
-      <button onClick={togglePanel} className="collapsible flex justify-between ">{title}
-      <span><MdArrowRight className={ ` text-xl ${open ? "rotate-90 duration-500" : "duration-500"} `}/></span>
+    <div className="item">
+      <button
+        onClick={togglePanel}
+        className="collapsible flex justify-between "
+      >
+        {title}
+        <span>
+          <MdArrowRight
+            className={` text-xl ${
+              open ? "rotate-90 duration-500" : "duration-500"
+            } `}
+          />
+        </span>
       </button>
-      <div className="faq__content duration-700">
-        {open && <div className='duration-700 ease-in-out'>{text}</div>}
+      <div className="faq__content duration-1000">
+        {open && <div className="duration-1000 ease-in-out py-5">{text}</div>}
       </div>
     </div>
   );
@@ -24,28 +33,28 @@ function Collapsible({ title, text }) {
 function Container() {
   const questionsList = [
     {
-      title: 'Where can I get travel vaccines?',
-      text: '  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, velit?',
+      title: "Where can I get travel vaccines?",
+      text: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, velit?",
     },
     {
-      title: 'How long do travel vaccines last?',
-      text: '  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, velit?',
+      title: "How long do travel vaccines last?",
+      text: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, velit?",
     },
     {
-      title: 'How long do travel vaccines last?',
-      text: '  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, velit?',
+      title: "How long do travel vaccines last?",
+      text: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, velit?",
     },
     {
-      title: 'How long do travel vaccines last?',
-      text: '  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, velit?',
+      title: "How long do travel vaccines last?",
+      text: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, velit?",
     },
     {
-      title: 'How long do travel vaccines last?',
-      text: '  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, velit?',
+      title: "How long do travel vaccines last?",
+      text: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, velit?",
     },
     {
-      title: 'How long do travel vaccines last?',
-      text: 'text',
+      title: "How long do travel vaccines last?",
+      text: "text",
     },
     // Rest of your FAQ list
   ];
@@ -54,14 +63,11 @@ function Container() {
 
   return (
     <div>
-    
-      <div className=''>
-        <div className='text-white'>
-          {questionsList.map((item, i) =>
-            <Collapsible key={i} title={item.title} text={item.text}/>
-          )}
-
-        
+      <div className="">
+        <div className="text-white">
+          {questionsList.map((item, i) => (
+            <Collapsible key={i} title={item.title} text={item.text} />
+          ))}
         </div>
         {/* <div className='col'>
           {questionsList.slice(half).map((item, i) =>
@@ -74,33 +80,32 @@ function Container() {
 }
 
 export default function App() {
-  return(
+  return (
     <>
-   
-    <div
-
-style={{ backgroundImage: "url('https://images.unsplash.com/photo-1468577374753-87c7686a392b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fGZsb29yJTIwbGlnaHR8ZW58MHx8MHx8fDA%3D')",
- backgroundAttachment: 'fixed', backgroundRepeat: "no-repeat", backgroundSize: "cover",  padding:"50px 0 50px 0"
-}}
-
->
-
- <div className='w-[80%] mx-auto grid md:grid-cols-2 bg-[#0000006e] p-10 rounded-2xl'>
- <div className=' flex justify-center '>
-    
-    <img className='w-[400px] rounded-lg' src="https://static.wixstatic.com/media/fa1267_31a6ccc1764b4c6ea094561147364a95~mv2.gif" alt="" />
-</div>
- <Container />;
- </div>
-   </div>
+      <div
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1468577374753-87c7686a392b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fGZsb29yJTIwbGlnaHR8ZW58MHx8MHx8fDA%3D')",
+          backgroundAttachment: "fixed",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          padding: "50px 0 50px 0",
+        }}
+      >
+        <div className="w-[80%] mx-auto grid md:grid-cols-2 bg-[#0000006e] p-10 rounded-2xl">
+          <div className=" flex justify-center ">
+            <img
+              className="w-[400px] rounded-lg"
+              src="https://static.wixstatic.com/media/fa1267_31a6ccc1764b4c6ea094561147364a95~mv2.gif"
+              alt=""
+            />
+          </div>
+          <Container />;
+        </div>
+      </div>
     </>
-  )
-  
-  
- 
+  );
 }
-
-
 
 // import React from "react";
 // const questions = [
@@ -124,16 +129,16 @@ style={{ backgroundImage: "url('https://images.unsplash.com/photo-1468577374753-
 //       question: 'Search on your phone or tablet',
 //       answer: 'Suspendisse ipsum elit, hendrerit id eleifend at, condimentum et mauris. Curabitur et libero vel arcu dignissim pulvinar ut ac leo. In sit amet orci et erat accumsan interdum.',
 //     },
-    
+
 //   ]
-  
-//  const  FaqSection=(props)=> {    
+
+//  const  FaqSection=(props)=> {
 //     const [searchTerm, setSearchTerm] = React.useState('');
 //     const [searchResults, setSearchResults] = React.useState([]);
 //     const handleSearchChange = e => {
 //       setSearchTerm(e.target.value);
 //     };
-    
+
 //     // React.useEffect(() => {
 //     //   const results = props.data.filter(item=>
 //     //     item.question.toLowerCase().includes(searchTerm)
@@ -146,20 +151,19 @@ style={{ backgroundImage: "url('https://images.unsplash.com/photo-1468577374753-
 //         );
 //         setSearchResults(results);
 //       }, [searchTerm]);
-      
-    
-//     return (    
+
+//     return (
 //       <div className='container'>
 //         <h2 className="heading">How can we help you?</h2>
-//         <Searchbar onSearchChange={handleSearchChange}/> 
+//         <Searchbar onSearchChange={handleSearchChange}/>
 //         <section className='faq'>
 //          {searchResults.map(item => <Question question={item.question} answer={item.answer} />)}
-//         </section>      
+//         </section>
 //       </div>
 //     )
 //   }
 //   export default FaqSection
-  
+
 //   const Searchbar = props => {
 //     const [value, setValue] = React.useState('')
 //     const handleChange = (e) => {
@@ -171,11 +175,11 @@ style={{ backgroundImage: "url('https://images.unsplash.com/photo-1468577374753-
 //         <svg viewBox="0 0 512 512" width="100" title="search">
 //     <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" />
 //   </svg>
-//         <input className='searchbar' type='text' placeholder='Describe your issue' onChange={handleChange} value={value}/>      
-//       </form>    
+//         <input className='searchbar' type='text' placeholder='Describe your issue' onChange={handleChange} value={value}/>
+//       </form>
 //     )
 //   }
-  
+
 //   const Question = props => {
 //    const [isActive, setActive] = React.useState(false);
 //    const handleClick = (id) => {
@@ -189,16 +193,14 @@ style={{ backgroundImage: "url('https://images.unsplash.com/photo-1468577374753-
 //           <svg className={isActive? 'active' : ''} viewBox="0 0 320 512" width="100" title="angle-down">
 //     <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
 //   </svg>
-//         </button>     
+//         </button>
 //       </div>
 //       <div className={isActive? 'answer active' : 'answer'}>{props.answer}</div>
 //       </div>
 //     )
 //   }
-  
 
 //   ReactDOM.render(<FAQ data={questions}/>, document.querySelector('#root'));
-
 
 // import React, { useState } from 'react';
 // import './Faq.css'; // Assuming you have a CSS file for styling
@@ -219,7 +221,7 @@ style={{ backgroundImage: "url('https://images.unsplash.com/photo-1468577374753-
 //           src="https://raw.githubusercontent.com/ArtemPonomarenko/FAQ-Accordion/main/images/illustration-woman-online-mobile.svg"
 //           alt="section image"
 //           className="img"
-         
+
 //         />
 //       </div>
 
@@ -263,8 +265,6 @@ style={{ backgroundImage: "url('https://images.unsplash.com/photo-1468577374753-
 // ];
 
 // export default Faq;
-
-
 
 // import React, { useState } from 'react';
 // import './Faq.css'; // Assuming you have a CSS file for styling
@@ -310,11 +310,9 @@ style={{ backgroundImage: "url('https://images.unsplash.com/photo-1468577374753-
 //         ))}
 //       </div>
 
-   
 //     </main>
 //   );
 // };
-
 
 // const data = [
 //   {
